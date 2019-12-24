@@ -6,28 +6,40 @@ $letterSize-Selection:35px;
 main {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
     section {
-        background-color: rgba($color: black, $alpha: 0.0);
-        color: rgba($color: white, $alpha: 0);
+        font-size: 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        animation: background-color .2s color .2s;
         .main-object {
+            opacity: 0;
+            background: rgba($color: black, $alpha: 0.0);
+            color: rgba($color: white, $alpha: 0);
             h2 {
                 text-align: center;
+                transition: color .3s;
             }
             p {
                 margin: 3%;
+                transition: color .3s;
             }
+            transition:background .3s;
         }
+        transition:.3s;
     }
     section:hover {
+        font-size: 25px;
         .main-object {
-            background-color: rgba($color: black, $alpha: 0.25);
-            color: rgba($color: white, $alpha: 1.0);
+            opacity: 1;
+            background: rgba($color: black, $alpha: 0.25);
+            h2 {
+                color: rgba($color: white, $alpha: 1.0);
+            }
+            p {
+                color: rgba($color: white, $alpha: 1.0);
+            }
         }
+        transition-delay: .1s;
     }
     .home {
         background-image: $backgroundImage1;

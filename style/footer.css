@@ -1,0 +1,105 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .footer-List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+footer .footer-List .social-network {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+  border-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .footer-legend {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .footer-legend div {
+  padding: .5%;
+}
+
+footer:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+footer:hover .footer-List .social-network {
+  width: 60px;
+  height: 60px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin: 2%;
+  -webkit-box-shadow: 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF;
+          box-shadow: 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF, 3px 3px 3px #FFFFFF;
+}
+
+footer:hover .footer-List .social-network img {
+  height: 65px;
+}
+
+footer:hover .footer-legend {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.75em;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+footer:hover .footer-legend div {
+  padding-left: .75%;
+  padding-right: .75%;
+  padding: .5%;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -6,12 +6,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 25px;
 }
 
 main section {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
+  font-size: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,20 +19,46 @@ main section {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-animation: background-color .2s color .2s;
-          animation: background-color .2s color .2s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section .main-object {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 
 main section .main-object h2 {
   text-align: center;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 main section .main-object p {
   margin: 3%;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+main section:hover {
+  font-size: 25px;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 main section:hover .main-object {
-  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+main section:hover .main-object h2 {
+  color: white;
+}
+
+main section:hover .main-object p {
   color: white;
 }
 

@@ -16,7 +16,7 @@ nav {
             color: inherit;
         }
         cursor:pointer;
-        transition: color .2s;
+        transition:.3s;
     }
     .nav-List-element:hover {
         color: $letterColor-Selection;
@@ -37,7 +37,7 @@ nav {
             color: inherit;
         }
         cursor:pointer;
-        transition: color .2s;
+        transition: .2s;
     }
     .nav-Element-1:hover {
         font-size: $letterSize-Selection;
