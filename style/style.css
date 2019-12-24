@@ -312,8 +312,8 @@ footer .footer-legend div {
 
 footer:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 footer:hover .footer-List .social-network {
