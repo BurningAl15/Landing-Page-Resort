@@ -1,0 +1,61 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 25px;
+}
+
+main section {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-animation: background-color .2s color .2s;
+          animation: background-color .2s color .2s;
+}
+
+main section .main-object h2 {
+  text-align: center;
+}
+
+main section .main-object p {
+  margin: 3%;
+}
+
+main section:hover .main-object {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+main .home {
+  background-image: url("../Images/hotel2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main .about {
+  background-image: url("../Images/hotel3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main .cool {
+  background-image: url("../Images/hotel2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */

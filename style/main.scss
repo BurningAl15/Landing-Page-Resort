@@ -1,0 +1,50 @@
+$backgroundImage1:url('../Images/hotel2.jpeg');
+$backgroundImage2:url('../Images/hotel3.jpeg');
+$backgroundImage3:url('../Images/hotel2.jpeg');
+$letterSize-unSelection:30px;
+$letterSize-Selection:35px;
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    section {
+        background-color: rgba($color: black, $alpha: 0.0);
+        color: rgba($color: white, $alpha: 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        animation: background-color .2s color .2s;
+        .main-object {
+            h2 {
+                text-align: center;
+            }
+            p {
+                margin: 3%;
+            }
+        }
+    }
+    section:hover {
+        .main-object {
+            background-color: rgba($color: black, $alpha: 0.25);
+            color: rgba($color: white, $alpha: 1.0);
+        }
+    }
+    .home {
+        background-image: $backgroundImage1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .about {
+        background-image: $backgroundImage2;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .cool {
+        background-image: $backgroundImage3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}

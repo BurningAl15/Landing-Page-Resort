@@ -1,0 +1,9 @@
+$letterColor-Selection:white;
+$letterColor-unSelection:rgba(255, 255, 255, .651);
+$letterSize-unSelection:30px;
+$letterSize-Selection:35px;
+@mixin setProperties($backgroundImage) {
+    background-image: $backgroundImage;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

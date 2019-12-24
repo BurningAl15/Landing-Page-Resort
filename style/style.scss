@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$letterColor-Selection:white;
+$letterColor-unSelection:rgba(255, 255, 255, .651);
+$letterSize-unSelection:30px;
+$letterSize-Selection:35px;
+$backgroundImage1:url('../Images/hotel2.jpeg');
+$backgroundImage2:url('../Images/hotel1.jpeg');
+$backgroundImage3:url('../Images/hotel2.jpeg');
+@mixin setProperties($backgroundImage) {
+    background-image: $backgroundImage;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    @include setProperties(url('../Images/hotel1.jpeg'));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+@import "./nav.scss";
+.start {
+    height: 100vh;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .start-group {
+        color: rgba($color: white, $alpha: 0);
+        h2 {
+            text-align: center;
+        }
+        p {
+            margin: 3%;
+        }
+    }
+    animation: color .2s;
+    animation: background-color .2s;
+}
+
+.start:hover {
+    .start-group {
+        background-color: rgba(0, 0, 0, .25);
+        h2 {
+            // visibility: visible;
+            // z-index: 10;
+            color: rgba($color: white, $alpha: 1.0);
+        }
+        p {
+            // visibility: visible;
+            // z-index: 10;
+            color: rgba($color: white, $alpha: 1.0);
+        }
+    }
+}
+
+@import "./main.scss";
+footer {
+    background-color: rgba($color: black, $alpha: .9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .footer-List {
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        justify-content: center;
+        color: white;
+        // height: 10vh;
+        .social-network {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 100%;
+            border-width: 0;
+            margin: 2%;
+        }
+    }
+    .footer-legend {
+        color: rgba($color: #FFFFFF, $alpha: 0.75);
+        text-align: center;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        div {
+            padding: .5%;
+        }
+    }
+    animation: background-color .2s;
+}
+
+footer:hover {
+    background-color: rgba($color: black, $alpha: 0.8);
+    .footer-List {
+        .social-network {
+            width: 60px;
+            height: 60px;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            margin: 2%;
+            img {
+                height: 60px;
+            }
+        }
+    }
+    .footer-legend {
+        color: rgba($color: #FFFFFF, $alpha: 1.0);
+        font-size: 1.75em;
+        div {
+            padding-left: .75%;
+            padding-right: .75%;
+            padding: .5%;
+        }
+    }
+}
